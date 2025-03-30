@@ -9,10 +9,12 @@
 </head>
 <body>
   <x-header/>
-  
+
   <main class="h-screen grid place-items-center">
     {{ $slot }}
   </main>
+
+  <x-footer/>
   
 </body>
 </html>
