@@ -1,6 +1,6 @@
 @php
-    $navItems = collect($navItems)->reject(
-        fn ($label, $routeName) => in_array($routeName, [ route('login'), route('register')])
+    $navItems = $navItems->reject(
+        fn ($label, $routeName) => in_array($routeName, [ 'login', 'register'])
 );
 @endphp
 

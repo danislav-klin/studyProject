@@ -1,13 +1,13 @@
 @php
-    $navItems = [
-        route('index') => 'Home',
-        route('course') => 'Courses',
-        route('contact') => 'Contact',
-        route('login') => 'Login',
-        route('register') => 'Register',
-        route('terms') => 'Terms',
-        route('privacy') => 'Privacy',
-];
+    $navItems = collect([
+        'index' => 'Home',
+        'course' => 'Courses',
+        'contact' => 'Contact',
+        'login' => 'Login',
+        'register' => 'Register',
+        'terms' => 'Terms',
+        'privacy' => 'Privacy',
+]);
 @endphp
 
 <!DOCTYPE html>
