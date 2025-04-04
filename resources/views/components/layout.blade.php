@@ -1,14 +1,3 @@
-@php
-    $navItems = collect([
-        'index' => 'Home',
-        'course' => 'Courses',
-        'contact' => 'Contact',
-        'login' => 'Login',
-        'register' => 'Register',
-        'terms' => 'Terms',
-        'privacy' => 'Privacy',
-]);
-@endphp
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,14 +8,14 @@
   <title>{{ config('app.name') }}</title>
   @vite('resources/css/app.css')
 </head>
-<body>
-  <x-header :$navItems/>
+<body class="flex flex-col h-screen">
+  <x-header />
 
-  <main class="h-screen grid place-items-center">
+  <main class="flex-grow grid place-items-center font-black">
     {{ $slot }}
   </main>
 
-  <x-footer :$navItems/>
+  <x-footer/>
   
 </body>
 </html>

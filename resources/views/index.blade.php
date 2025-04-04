@@ -1,3 +1,4 @@
 <x-layout>
-    Index
+    <x-hero/>
+    
 </x-layout>
