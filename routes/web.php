@@ -1,18 +1,31 @@
 <?php
 
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\IndexController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'index')->name('index');
 
-Route::view('/courses', 'courses')->name('courses');
 
-Route::view('/contact', 'contact')->name('contact');
+Route::get('/', IndexController::class)->name('index');
 
-Route::view('/login', 'login')->name('login');
+Route::controller(CourseController::class)
+    ->prefix('courses')
+    ->name('courses.')
+    ->group(function () {
 
-Route::view('/register', 'register')->name('register');
+        Route::get('/', [CourseController::class, 'index'])->name('index');
 
-Route::view('/terms', 'terms')->name('terms');
+        Route::get('/{course}', [CourseController::class, 'show'])->name('show');
+    });
 
-Route::view('/privacy', 'privacy')->name('privacy');
+Route::view('/contact', 'pages.contact')->name('contact');
+
+Route::view('/login', 'pages.login')->name('login');
+
+Route::view('/register', 'pages.register')->name('register');
+
+Route::view('/terms', 'pages.terms')->name('terms');
+
+Route::view('/privacy', 'pages.privacy')->name('privacy');
 

@@ -9,7 +9,7 @@
 
         <div class="fles gap-2 mt-6">
             <a href="{{ route('register') }}" class="whitespaxe-nowrap rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600">Get Started</a>
-            <a href="{{ route('courses') }}" class="whitespaxe-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100  hover:bg-gray-200">Explore Courses</a>
+            <a href="{{ route('courses.index') }}" class="whitespaxe-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100  hover:bg-gray-200">Explore Courses</a>
         </div>
 
     </div>
