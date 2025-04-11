@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,8 @@ Route::controller(CourseController::class)
 
         Route::get('/{course}', [CourseController::class, 'show'])->name('show');
     });
+
+Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lessons.show');
 
 Route::view('/contact', 'pages.contact')->name('contact');
 

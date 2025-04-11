@@ -1,0 +1,1 @@
+<iframe class="aspect-video rounded-md" src="https://www.youtube.com/embed/kq64_4QiLhU?list=PL-FhWbGlJPfY8KK_1Tp6fdmCjlX8soQCA" title="Laravel для новичков #46 - Видео плеер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

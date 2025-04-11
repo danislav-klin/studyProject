@@ -9,9 +9,13 @@ use Illuminate\View\View;
 
 class CourseController extends Controller
 {
-    public function index(): View
+    public function index(Request $request): View
     {
-        $courses = Course::paginate();
+        $courses = Course::latest()
+            ->whereLike('title', "%{$request->search}%")
+            ->orWhereLike('description', "%{$request->search}%")
+            ->paginate(15)
+            ->withQueryString();
     
         return view('pages.courses.index', ['courses' => $courses]);
     }

@@ -17,20 +17,17 @@ class CourseSeeder extends Seeder
         [
             'title' => 'Vue composition API',
             'description' => 'Project development',
-            'lessons_count' => '123',
-            'length' => '15h 38min',
+           
         ],
         [
             'title' => 'Vue composition API',
             'description' => 'Project development',
-            'lessons_count' => '163',
-            'length' => '15h 38min',
+           
         ],
         [
             'title' => 'Vue composition API',
             'description' => 'Project development',
-            'lessons_count' => '23',
-            'length' => '15h 38min',
+          
         ],
     ];
 

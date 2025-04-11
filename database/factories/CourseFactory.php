@@ -22,8 +22,8 @@ class CourseFactory extends Factory
         return [
             'title' => ucfirst(fake()->words(rand(2, 6), true)),
             'description' => fake()->text(),
-            'lessons_count' => fake()->numberBetween(10, 50),
-            'length' => "{$hours}h {$minuts}min",
+            
+            
         ];
     }
 }
